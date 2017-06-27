@@ -14,7 +14,7 @@
         <div id="header">
             <h1>See how some jQuery functions work by exploring this page</h1>
         </div> 
-        <div class="main-body">
+        <div class="main-body" id="row1">
             <div class="function-example" id="hide-show">
                 <h2>.hide and .show</h2>
                 <h3>Click a paragraph below to see the .hide function in action</h3>
@@ -30,8 +30,6 @@
                 <p>Watch me .toggle</p>
                 <button>Click here</button>
             </div>
-        </div>
-        <div class="main-body">
             <div class="function-example" id="slide-down-up">
                 <h2>.slideUp and .slideDown</h2>
                 <button id="slideUp">Click me for .slideUp</button>
@@ -45,7 +43,7 @@
                 <a href="http://imgur.com/X3u8QJw"><img src="http://i.imgur.com/X3u8QJws.jpg" title="source: imgur.com" /></a>
             </div>
         </div>
-        <div class="main-body">
+        <div class="main-body" id="row2">
             <div class="function-example" id="fade-in-out">
                 <h2>.fadeIn and .fadeOut</h2>
                 <h3>Hover over the image to make it .fadeOut</h3>
@@ -56,6 +54,51 @@
                 <h2>.addClass</h2>
                 <p><span>Click</span> <span>any</span> <span>word</span> <span>to</span> <span>highlight</span> <span>by</span> <span>adding</span> <span>class</span> <span>.highlight</span></p>
                 <button>Click here to reset and remove the .highlight class</button>
+            </div>
+            <div class="function-example" id="before-after">
+                <h2>.before and .after</h2>
+                <h3>Insert content .before or .after a selected element</h3>
+                <p id="before">Click me to insert a greeting before</p>
+                <p id="after">Click me to insert a valediction after</p>
+            </div>
+            <div class="function-example" id="append">
+                <h2>.append</h2>
+                <h3>Modify an html element by .append ing to the end of that element</h3>
+                <p>Will you be able to append this?</p>
+                <button>Click here to try</button>
+            </div>
+        </div>
+        <div class="main-body" id="row3">
+            <div class="function-example" id="html-text">
+                <h2>.html, .text, and .css</h2>
+                <h3>Grab or replace the content of an html element, or just grab the text of that element.</h3>
+                <h3>Even change css styles with your new text!</h3>
+                <p id="change">Click to add a <span></span> word and color to this sentence</p>
+                <div>
+                    <button class="word">fantastic</button>
+                    <button class="word">thrilling</button>
+                    <button class="word">superb</button>
+                </div>
+                <div>
+                    <button class="color-selector" id="red">Red</button>
+                    <button class="color-selector" id="purple">Purple</button>
+                    <button class="color-selector" id="blue">Blue</button>
+                </div>
+            </div>
+            <div class="function-example" id="attr">
+                <h2>.attr and .val</h2>
+                <h3>Retrieve a value and assign an attribute</h3>
+                <a href="http://imgur.com/i7VuBWc"><img src="http://i.imgur.com/i7VuBWcs.jpg" title="source: imgur.com" /></a>
+                <p>Write an alt for the image, then mouse over to see it at work</p> 
+                <input type="text" value="">
+            </div>
+            <div class="function-example" id="data">
+                <h2>.data</h2>
+                <h3>Store and retrive data on an html element</h3>
+                <p id="data-collector">Click the 1st button below to attach data to this element</p>
+                <p>Then click the 2nd to print that data into this div</p>
+                <button id="attach-data">Attach data</button>
+                <button id="retrieve-data">Retrieve and print data</button>
             </div>
         </div>
     </div>

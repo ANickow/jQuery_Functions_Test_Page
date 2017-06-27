@@ -20,18 +20,48 @@
 }
 
 .function-example{
-    width: 45%;
+    width: 20%;
     margin: auto;
     padding: 10px;
     border: 1px solid black;
-    height: 200px;
+    height: 250px;
 }
 
 a{
     display: block;
-    margin: 20px;
+    margin: 10px;
+}
+
+h2{
+    background: lightblue;
+    border-radius: 5px;
+}
+
+h3, p, button{
+    margin: 5px 0;
+}
+
+h3{
+    font-size: 16px;
+}
+
+button{
+    font-size: 10px;
+    padding: 3px;
 }
 
 .highlight{
     background: yellow;
+}
+
+#red{
+    color: red;
+}
+
+#purple{
+    color: purple;
+}
+
+#blue{
+    color: blue;
 }

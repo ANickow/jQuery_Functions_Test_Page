@@ -32,11 +32,11 @@ $(document).ready(function(){
 
     // fadeIn
     $("#fade-in-out button").click(function(){
-        $("#fade-in-out a").fadeIn("slow");
+        $("#fade-in-out img").fadeIn("slow");
     });
 
     // fadeOut
-    $("#fade-in-out a").hover(function(){
+    $("#fade-in-out img").hover(function(){
         $(this).fadeOut("slow");
     });
 
@@ -48,5 +48,52 @@ $(document).ready(function(){
     // removeClass
     $("#add-class button").click(function(){
         $("#add-class span").removeClass("highlight");
+    });
+
+    // before
+    $("#before").click(function(){
+        $(this).before("<b>Hey there!</b>");
+    });
+
+    // after
+    $("#after").click(function(){
+        $(this).after("<b>See you later</b>");
+    });
+
+    // append
+    $("#append button").click(function(){
+        $("#append p").append(" Way to go! You did it!!!!");
+    });
+
+    // html
+    $(".word").click(function(){
+        var changeString=$(this).html();
+        $("#change span").html(changeString);
+    })
+
+    // text and css
+    $(".color-selector").click(function(){
+        var newColor = $(this).text();
+        console.log(newColor);
+        $("#change").css("color", newColor);
+    });
+
+    // val and attr
+    $("input").keyup(function(){
+        var newAlt = $(this).val();
+        $("#attr img").attr("title", newAlt);
+    });
+
+    // data
+    var dataText = '';
+    $( "div" ).data( "test", { first: 16, last: "pizza!" } );
+    $("#attach-data").click(function(){
+        $("#data-collector").data("test", {word:"Surprise", number:42});
+         dataText += ($("#data-collector").data("test").word);
+    });
+    $("#retrieve-data").click(function(){
+        $("#data h3").after(function(){
+            return "<p>" + dataText + "</p>";
+        });
     });
 });
